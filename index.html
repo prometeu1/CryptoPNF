@@ -1,90 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoPNF</title>
-    <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Vous pouvez ajouter un fichier JS ici si nécessaire -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto PNF</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- En-tête de la page -->
-    <header>
-        <div class="logo">
-            <h1>CryptoPNF</h1>
-            <p>For investors and traders</p>
-        </div>
-        <div class="language-theme">
-            <button>Change Language</button>
-            <button>Change Theme</button>
-        </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#">For Investors</a></li>
-            <li><a href="#">For Traders</a></li>
-        </ul>
+  <header class="header">
+    <div class="logo">Crypto PNF</div>
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li><a href="#">For investors</a></li>
+        <li><a href="#">For traders</a></li>
+        <li><a href="#" class="change-language">Change language</a></li>
+        <li><a href="#" class="change-theme">Change theme</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Section des cryptomonnaies -->
-    <section class="crypto-info">
-        <h2>Cryptos</h2>
-        <div class="crypto-list">
-            <div class="crypto-item">
-                <h3>Crypto 1</h3>
-                <p>Market cap: $XX</p>
-                <p>Price: $XX</p>
-                <p>Last ATH: $XX</p>
-                <p>24h Vol: $XX</p>
-            </div>
-            <div class="crypto-item">
-                <h3>Crypto 2</h3>
-                <p>Market cap: $XX</p>
-                <p>Price: $XX</p>
-                <p>Last ATH: $XX</p>
-                <p>24h Vol: $XX</p>
-            </div>
-        </div>
-        <button>View More...</button>
+  <main class="main">
+    <section class="crypto-list">
+      <h2>Crypto</h2>
+      <ul class="crypto-items">
+        <li>
+          <span class="crypto-name">crypto 1</span>
+          <span class="crypto-price">-market cap -price -last 24h vol</span>
+        </li>
+        <li>
+          <span class="crypto-name">crypto 2</span>
+          <span class="crypto-price">-market cap -price -last 24h vol</span>
+        </li>
+        <!-- Add more crypto items as needed -->
+      </ul>
+      <button class="view-more">View More</button>
     </section>
 
-    <!-- Section graphique BTC/USDT et autres données -->
-    <section class="chart-info">
-        <h2>BTC/USDT</h2>
-        <div class="chart-container">
-            <p>Graphique BTC/USDT ici</p>
-        </div>
-
-        <div class="trade-counter">
-            <h3>Trades Counter</h3>
-            <ul>
-                <li>m1: </li>
-                <li>m5: </li>
-                <li>m15: </li>
-                <li>m30: </li>
-                <li>H1: </li>
-                <li>H4: </li>
-                <li>D: </li>
-            </ul>
-        </div>
-
-        <div class="fear-greed-index">
-            <h3>Fear & Greed Index</h3>
-            <p>Graphique de l'indice ici</p>
-        </div>
-
-        <button>View More...</button>
+    <section class="trading-info">
+      <h2>BTC/USDT</h2>
+      <div class="trades-counter">
+        <span>Trades counter:</span>
+        <span>1</span>
+        <span>5</span>
+        <span>15</span>
+        <span>30</span>
+        <span>1H</span>
+        <span>1D</span>
+      </div>
+      <div class="fear-greed">
+        <span>Fear & Greed index</span>
+        <div class="index-value"></div>
+      </div>
+      <button class="view-more">View More</button>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 CryptoPNF. All rights reserved.</p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 2023 Crypto PNF</p>
+  </footer>
 
-    <!-- Lien vers le fichier JavaScript -->
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

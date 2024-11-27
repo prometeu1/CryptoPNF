@@ -91,3 +91,34 @@ body {
   display: flex;
   align-items: center;
 }
+
+#crypto-list {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.crypto-item h2 {
+  font-size: 18px;
+  color: #004aad;
+}
+
+.crypto-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.crypto-item p {
+  margin: 10px 0;
+  font-size: 14px;
+}

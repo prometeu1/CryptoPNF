@@ -21,31 +21,31 @@ body {
 
 .navbar-links {
   display: flex;
+  margin-left: 20px; /* Add margin to separate links from the logo */
 }
 
 .navbar-link {
-  padding: 10px 20px; /* Donne une taille uniforme pour les carrés */
-  margin-left: 15px; /* Espacement entre les onglets */
-  background-color: #007bff; /* Updated button color */
-  color: #fff; /* Updated text color */
-  text-decoration: none; /* Enlève le souligné */
+  padding: 10px 20px;
+  margin-left: 15px;
+  background-color: #004aad;
+  color: #ffffff;
+  text-decoration: none;
   font-size: 16px;
-  border-radius: 5px; /* Bordure arrondie */
-  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
   font-weight: bold;
-  border: 2px solid #007bff; /* Updated border color */
+  border: 2px solid #004aad;
 }
 
 /* Effet au survol */
 .navbar-link:hover {
   cursor: pointer;
-  background-color: #0056b3; /* Updated hover color */
-  border-color: #0056b3; /* Updated hover border color */
+  background-color: #004aad;
 }
 
 .navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between; /* Changed from flex-start to space-between */
   align-items: center;
   background-color: #0e141b;
   padding: 10px 20px;
@@ -53,7 +53,41 @@ body {
 }
 
 .navbar-link:active {
-  transform: translateY(4px); /* Déplace le bouton vers le bas pour simuler qu'il s'enfonce */
-  background-color: #444; /* Updated active color */
-  border-color: #444; /* Updated active border color */
+  transform: translateY(4px);
+  background-color: #004aad;
+  border-color: #004aad;
+}
+
+.navbar-btn {
+  padding: 10px 20px;
+  background-color: #004aad;
+  color: #ffffff;
+  border: 2px solid #004aad;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-left: 15px;
+}
+
+.navbar-btn:hover {
+  background-color: #004aad;
+  cursor: pointer;
+}
+
+.navbar-btn:active {
+  transform: translateY(4px);
+  background-color: #004aad;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Ensure actions are pushed to the far right */
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }

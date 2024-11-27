@@ -1,20 +1,59 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   margin: 0;
   padding: 0;
-  background-color: #131a23;
+  background-color: #0e141b;
 }
 
 .navbar-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  backgroud-color: #131a23;
+  background-color: #0e141b;
   padding: 5px;
-  border-bottom: 1px solid #424242;
-}
+  }
 
 .navbar-logo img {
   width: 150px;
   height: auto;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-link {
+  padding: 10px 20px; /* Donne une taille uniforme pour les carrés */
+  margin-left: 15px; /* Espacement entre les onglets */
+  background-color: #007bff; /* Updated button color */
+  color: #fff; /* Updated text color */
+  text-decoration: none; /* Enlève le souligné */
+  font-size: 16px;
+  border-radius: 5px; /* Bordure arrondie */
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  border: 2px solid #007bff; /* Updated border color */
+}
+
+/* Effet au survol */
+.navbar-link:hover {
+  cursor: pointer;
+  background-color: #0056b3; /* Updated hover color */
+  border-color: #0056b3; /* Updated hover border color */
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #0e141b;
+  padding: 10px 20px;
+  border-bottom: 1px solid #5555554f;
+}
+
+.navbar-link:active {
+  transform: translateY(4px); /* Déplace le bouton vers le bas pour simuler qu'il s'enfonce */
+  background-color: #444; /* Updated active color */
+  border-color: #444; /* Updated active border color */
 }
